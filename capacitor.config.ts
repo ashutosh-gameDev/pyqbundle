@@ -13,6 +13,18 @@ const config: CapacitorConfig = {
     url: "https://preppath-student-web.vercel.app",
     androidScheme: "https",
   },
+  android: {
+    // Targeting API 36 means Android forces the app to draw edge-to-edge
+    // (under the status bar and gesture/nav bar) with no way to opt out -
+    // this tells Capacitor to compensate by margining the WebView itself
+    // to the real system-bar-safe area, instead of drawing content under
+    // the status bar/buttons. Without this (the default is "disable"),
+    // the AdMob banner's own native positioning (which already reads the
+    // real system inset) and our WebView's content disagree about where
+    // the screen's true edges are - explains both the status-bar/button
+    // overlap and the banner-vs-bottom-nav mismatch reported on-device.
+    adjustMarginsForEdgeToEdge: "force",
+  },
 };
 
 export default config;
