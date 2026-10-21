@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 108 108">
+  <!-- Transparent background - this is the adaptive icon's FOREGROUND layer
+       only. Kept well inside the ~66% "safe zone" every launcher mask
+       (circle, squircle, rounded square) guarantees stays visible, so the
+       "PB" mark never gets clipped regardless of device/launcher. -->
+  <text x="54" y="67" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="700" fill="#ffffff">PB</text>
+</svg>

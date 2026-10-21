@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 108 108">
+  <!-- Legacy ic_launcher_round - pre-masked into a circle, unlike the
+       adaptive icon (API 26+) which lets the launcher apply its own mask
+       shape. Only used as a fallback on older launchers that don't do
+       that themselves. -->
+  <circle cx="54" cy="54" r="54" fill="#2a78d6"/>
+  <text x="54" y="67" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="700" fill="#ffffff">PB</text>
+</svg>
