@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">PrepPath</string>
-    <string name="title_activity_main">PrepPath</string>
+    <string name="app_name">PYQ Bundle</string>
+    <string name="title_activity_main">PYQ Bundle</string>
     <string name="package_name">com.preppath.student</string>
     <string name="custom_url_scheme">com.preppath.student</string>
 </resources>

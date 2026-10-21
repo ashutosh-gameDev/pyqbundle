@@ -2,7 +2,7 @@ import type { CapacitorConfig } from "@capacitor/cli";
 
 const config: CapacitorConfig = {
   appId: "com.preppath.student",
-  appName: "PrepPath",
+  appName: "PYQ Bundle",
   webDir: "www",
   server: {
     // Loads the live student-web site directly, instead of bundling a
