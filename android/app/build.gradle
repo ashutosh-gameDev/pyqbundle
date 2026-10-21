@@ -3,6 +3,11 @@ apply plugin: 'com.android.application'
 android {
     namespace "com.preppath.student"
     compileSdk rootProject.ext.compileSdkVersion
+    // AGP's own default build-tools pick for compileSdk 35 is 34.0.0, which
+    // isn't installed on this machine's SDK (only 36.0.0 is) - pointing at
+    // what's actually present avoids both a license prompt and a network
+    // fetch for a second copy.
+    buildToolsVersion "36.0.0"
     defaultConfig {
         applicationId "com.preppath.student"
         minSdkVersion rootProject.ext.minSdkVersion

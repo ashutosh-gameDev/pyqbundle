@@ -24,6 +24,18 @@ allprojects {
     }
 }
 
+// AGP's own default build-tools pick for compileSdk 35 is 34.0.0; this
+// machine's SDK only has 36.0.0 installed. Set here (not per-module) so it
+// also covers capacitor-cordova-android-plugins/build.gradle, which
+// `cap sync` regenerates and never sets buildToolsVersion itself.
+subprojects {
+    afterEvaluate { proj ->
+        if (proj.hasProperty("android")) {
+            proj.android.buildToolsVersion "36.0.0"
+        }
+    }
+}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
