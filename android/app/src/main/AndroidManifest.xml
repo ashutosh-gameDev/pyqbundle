@@ -35,16 +35,15 @@
         </provider>
 
         <!--
-          Google's own published TEST App ID - required for the AdMob SDK
-          to initialize at all (its absence crashes the app on launch, not
-          just "no ads"). Serves clearly-marked test ads, no real AdMob
-          account needed yet. Swap for the real App ID from your AdMob
-          console once one exists (and swap the test ad unit ID in
-          student-web's lib/admob.ts at the same time).
+          Real AdMob App ID - required for the AdMob SDK to initialize at
+          all (its absence crashes the app on launch, not just "no ads").
+          Ad requests still serve TEST ads for now (see student-web's
+          lib/admob.ts IS_TESTING flag) - flip that to false once ready to
+          actually launch with real ad serving.
         -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713" />
+            android:value="ca-app-pub-3017457917940987~5242228476" />
     </application>
 
     <!-- Permissions -->
