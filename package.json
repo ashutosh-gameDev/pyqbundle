@@ -1,0 +1,19 @@
+{
+  "name": "preppath-mobile",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PrepPath Android app - Capacitor shell around the live student-web site, with native AdMob + Play Billing bolted on.",
+  "scripts": {
+    "sync": "cap sync android",
+    "open:android": "cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^7.4.4",
+    "@capacitor/app": "^7.1.0",
+    "@capacitor/core": "^7.4.4"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.4.4",
+    "typescript": "^5.6.3"
+  }
+}

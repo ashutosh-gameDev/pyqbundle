@@ -1,0 +1,22 @@
+node_modules/
+
+# Android build output and local machine config - android/ source itself
+# (Gradle files, manifest, res/) is committed, these are not.
+android/build/
+android/app/build/
+android/.gradle/
+android/local.properties
+android/.idea/
+android/*.iml
+android/captures/
+android/app/release/
+android/app/debug/
+
+*.log
+.DS_Store
+
+# Release signing material - never committed, regardless of where it ends
+# up (android/ or elsewhere).
+*.jks
+*.keystore
+key.properties
