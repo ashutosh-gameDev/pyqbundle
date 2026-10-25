@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "186663809465",
+    "project_id": "pyq-bundle",
+    "storage_bucket": "pyq-bundle.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:186663809465:android:43c5f110c7e130b9dec668",
+        "android_client_info": {
+          "package_name": "com.pyqbundle.student"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "186663809465-60jd21qoseio5os8auimmeg4g8u1qocb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqv7pZ-LottCG6KrJ7XsN7d0kG3TI_SvA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "186663809465-60jd21qoseio5os8auimmeg4g8u1qocb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -12,6 +12,7 @@
     "@capacitor/android": "^7.4.4",
     "@capacitor/app": "^7.1.0",
     "@capacitor/core": "^7.4.4",
+    "@capacitor/push-notifications": "7.0.7",
     "@capacitor/screen-orientation": "^7.0.4",
     "@capgo/native-purchases": "^7.19.3"
   },

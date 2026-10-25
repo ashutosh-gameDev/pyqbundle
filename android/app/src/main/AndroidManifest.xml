@@ -44,6 +44,16 @@
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3017457917940987~5242228476" />
+
+        <!-- Default icon/color FCM uses for a notification shown while the
+             app isn't open (no in-app code runs then to style it) - without
+             this it falls back to a poorly-scaled app icon. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@mipmap/ic_launcher" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/ic_launcher_background" />
     </application>
 
     <!-- Permissions -->
@@ -51,4 +61,8 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- Required by Google Play Billing (native-purchases plugin). -->
     <uses-permission android:name="com.android.vending.BILLING" />
+    <!-- Required on Android 13+ to actually show a push notification -
+         @capacitor/push-notifications doesn't declare this itself, the app
+         has to. Still requested at runtime too (see lib/push-notifications.ts). -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 </manifest>
